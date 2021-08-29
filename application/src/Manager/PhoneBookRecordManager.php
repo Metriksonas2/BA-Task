@@ -7,6 +7,7 @@ use App\Entity\User;
 use App\Repository\PhoneBookRecordRepository;
 use App\Repository\UserRepository;
 use phpDocumentor\Reflection\Types\This;
+use Symfony\Component\HttpFoundation\Request;
 
 class PhoneBookRecordManager
 {
@@ -41,5 +42,13 @@ class PhoneBookRecordManager
         }
 
         return $sharedUserIds;
+    }
+
+    public function editPhoneBookRecord(Request $request, PhoneBookRecord $phoneBookRecord)
+    {
+        $phoneBookRecord->setFirstName($request->request->get('firstName'));
+        $phoneBookRecord->setLastName($request->request->get('lastName'));
+        $phoneBookRecord->setEmail($request->request->get('email'));
+        $phoneBookRecord->setPhoneNumber($request->request->get('phoneNumber'));
     }
 }

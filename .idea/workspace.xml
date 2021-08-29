@@ -2,22 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BA Uzduotis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BA Uzduotis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/application/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/application/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/application/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordTestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Form/EditRecordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Form/PhoneBookRecordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/records/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/records/records.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/records/records.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/application/phone_book_record.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/application/phone_book_record.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/binlog.000005" beforeDir="false" afterPath="$PROJECT_DIR$/db/binlog.000005" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/db/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +211,7 @@
       <workItem from="1629921629381" duration="2578000" />
       <workItem from="1630009741155" duration="6982000" />
       <workItem from="1630150880882" duration="9627000" />
-      <workItem from="1630262226117" duration="6286000" />
+      <workItem from="1630262226117" duration="9779000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1629921852148</created>
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629921852148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added phone book records CRUD, ability to share records and see shared records">
+      <created>1630271480964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630271480964</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +235,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added phone book records CRUD, ability to share records and see shared records" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added phone book records CRUD, ability to share records and see shared records" />
   </component>
 </project>

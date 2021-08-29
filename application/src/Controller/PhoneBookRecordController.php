@@ -9,6 +9,7 @@ use App\Form\ShareRecordType;
 use App\Manager\PhoneBookRecordManager;
 use App\Repository\PhoneBookRecordRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -69,24 +70,30 @@ class PhoneBookRecordController extends AbstractController
         return $this->redirectToRoute('app_index');
     }
 
+    /**
+     * @Route("/edit/record/{id}", name="app_edit")
+     */
+    public function editAjaxRecord(Request $request, PhoneBookRecord $phoneBookRecord, PhoneBookRecordManager $manager): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $manager->editPhoneBookRecord($request, $phoneBookRecord);
+
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app_index');
+    }
 
     /**
-     * @Route("/edit/{id}", name="app_edit")
+     * @Route("/record/{id}", name="app_get_record_data")
      */
-    public function editRecord(Request $request, PhoneBookRecord $phoneBookRecord)
+    public function getRecordData(PhoneBookRecord $phoneBookRecord)
     {
-        $form = $this->createForm(EditRecordType::class, $phoneBookRecord);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->flush();
-
-            return $this->redirectToRoute('app_records');
-        }
-
-        return $this->render('records/edit.html.twig', [
-            'editForm' => $form->createView(),
+        return new JsonResponse([
+            'firstName' => $phoneBookRecord->getFirstName(),
+            'lastName' => $phoneBookRecord->getLastName(),
+            'email' => $phoneBookRecord->getEmail(),
+            'phoneNumber' => $phoneBookRecord->getPhoneNumber(),
         ]);
     }
 

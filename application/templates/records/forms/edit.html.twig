@@ -1,0 +1,35 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Share record</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form id="edit-form" method="post">
+        <div class="modal-body">
+            <div class="text-center mb-4">
+                <label for="firstName">First Name</label>
+                <input class="form-control" type="text" name="firstName" id="firstName">
+            </div>
+
+            <div class="text-center mb-4">
+                <label for="lastName">Last Name</label>
+                <input class="form-control" type="text" name="lastName" id="lastName">
+            </div>
+
+            <div class="text-center mb-4">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" name="email" id="email">
+            </div>
+
+            <div class="text-center mb-4">
+                <label for="phoneNumber">Phone number</label>
+                <input class="form-control" type="text" name="phoneNumber" id="phoneNumber">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="create-record-submit" type="submit" class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+</div>

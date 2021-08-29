@@ -36,9 +36,9 @@
                         <td>{{ record.phoneNumber }}</td>
                         <td>
                             <div class="record-icons">
-                                <a href="{{ path('app_edit', { id: record.id }) }}"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="share-btn" data-record="{{ record.id }}" data-toggle="modal" data-target="#editRecord"><i class="fas fa-edit"></i></a>
                                 <a href="{{ path('app_share', { id: record.id }) }}"><i class="fas fa-share"></i></a>
-                                <a href="{{ path('app_delete', { id: record.id }) }}"><i class="fas fa-trash"></i></a>
+                                <a href="#" class="delete-btn" data-record="{{ record.id }}"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
 
@@ -54,22 +54,46 @@
             {{ include('records/forms/create.html.twig') }}
         </div>
     </div>
+
+    <div class="modal fade" id="editRecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            {{ include('records/forms/edit.html.twig') }}
+        </div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
 
     <script>
-        $.ajax('/jquery/getjsondata',
-            {
-                dataType: 'json', // type of response data
-                timeout: 500,     // timeout milliseconds
-                success: function (data,status,xhr) {   // success callback function
-                    $('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
-                },
-                error: function (jqXhr, textStatus, errorMessage) { // error callback
-                    $('p').append('Error: ' + errorMessage);
+        $('.share-btn').click(function () {
+            const recordId = $(this).data('record');
+
+            $.ajax(`/record/${recordId}`,
+                {
+                    dataType: 'json',
+                    timeout: 2000,
+                    success: function (data) {
+                        $('#edit-form').attr('action', `/edit/record/${recordId}`);
+                        $('input[name="firstName"]').val(data.firstName);
+                        $('input[name="lastName"]').val(data.lastName);
+                        $('input[name="email"]').val(data.email);
+                        $('input[name="phoneNumber"]').val(data.phoneNumber);
+                    },
+                    error: function (errorMessage) {
+                        console.error("Error: " + errorMessage);
+                    }
                 }
-            });
+            );
+        });
+
+        $('.delete-btn').click(function (e) {
+            const recordId = $(this).data('record');
+
+            e.preventDefault();
+            $(this).closest('tr').remove();
+
+            $.ajax(`/delete/${recordId}`);
+        });
     </script>
 {% endblock %}
