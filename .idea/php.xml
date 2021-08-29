@@ -132,6 +132,9 @@
       <path value="$PROJECT_DIR$/application/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/application/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/application/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/application/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/application/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/application/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

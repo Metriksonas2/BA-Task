@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="" />
+    <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/templates/phone_book_record_test/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BA Uzduotis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BA Uzduotis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/application/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/application/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/application/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/application/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/application/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -146,6 +163,9 @@
       <path value="$PROJECT_DIR$/application/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/application/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/application/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/application/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/application/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/application/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1xETvtldheZc0hRK4yl9nZtM9Ri" />
@@ -155,6 +175,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -162,11 +183,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/application/composer.json" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records\forms" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records" />
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records\forms" />
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\home" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,11 +202,26 @@
       <option name="presentableId" value="Default" />
       <updated>1629919481846</updated>
       <workItem from="1629919483248" duration="2065000" />
-      <workItem from="1629921629381" duration="116000" />
+      <workItem from="1629921629381" duration="2578000" />
+      <workItem from="1630009741155" duration="6982000" />
+      <workItem from="1630150880882" duration="9627000" />
+      <workItem from="1630262226117" duration="6286000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1629921852148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629921852148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

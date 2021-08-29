@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="container">
+                <h2 class="text-center dmSans mt-2">Share Record</h2>
+
+                <table class="table table-striped my-5">
+                    <thead>
+                    <tr>
+                        <th scope="col">Person</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone number</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{ sharedRecord.firstName }} {{ sharedRecord.lastName }}</td>
+                        <td>{{ sharedRecord.email }}</td>
+                        <td>{{ sharedRecord.phoneNumber }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <form method="post">
+                    {{ form_start(shareForm) }}
+
+                    <div class="form-group text-center">
+                        {{ form_label(shareForm.sharedUsers, 'Users', { 'label_attr': {'class': 'form-check-label my-1'} }) }}
+                        {{ form_widget(shareForm.sharedUsers) }}
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" name="submit" class="btn website-btn mt-2">Share</button>
+                    </div>
+
+                    {{ form_end(shareForm) }}
+                </form>
+
+                {% if sharedUsers is not empty %}
+                    <table class="table table-striped mt-5">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Person</th>
+                            <th scope="col">Email</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% set index = 1 %}
+                        {% for user in sharedUsers %}
+                            <tr>
+                                <th scope="row">{{ index }}</th>
+                                <td>{{ user.firstName }} {{ user.lastName }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>
+                                    <div class="record-icons">
+                                        <a href="{{ path('app_unshare', { id: sharedRecord.id, userId: user.id }) }}"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                </td>
+
+                                {% set index = index + 1 %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script>
+        $(".selectpicker option[value='{{ app.user.id }}']").remove();
+
+        const sharedUserIds = {{ sharedUserIds|json_encode }};
+
+        sharedUserIds.forEach(id => {
+            $(`.selectpicker option[value='${id}']`).remove();
+        });
+    </script>
+{% endblock %}

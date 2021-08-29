@@ -136,6 +136,9 @@
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/orm" />
       <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/symfony/webpack-encore-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/application/vendor/doctrine/data-fixtures" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

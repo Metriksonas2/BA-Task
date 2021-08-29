@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="records-header">
+            <h2>My personal records</h2>
+            <button id="create-record-btn" class="btn" data-toggle="modal" data-target="#createRecord">
+                Create record
+            </button>
+        </div>
+        <br>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Person</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone number</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+                {% set index = 1 %}
+                {% for record in phoneBookRecords %}
+                    <tr>
+                        <th scope="row">{{ index }}</th>
+                        <td>{{ record.firstName }} {{ record.lastName }}</td>
+                        <td>{{ record.email }}</td>
+                        <td>{{ record.phoneNumber }}</td>
+                        <td>
+                            <div class="record-icons">
+                                <a href="{{ path('app_edit', { id: record.id }) }}"><i class="fas fa-edit"></i></a>
+                                <a href="{{ path('app_share', { id: record.id }) }}"><i class="fas fa-share"></i></a>
+                                <a href="{{ path('app_delete', { id: record.id }) }}"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </td>
+
+                        {% set index = index + 1 %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="createRecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            {{ include('records/forms/create.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        $.ajax('/jquery/getjsondata',
+            {
+                dataType: 'json', // type of response data
+                timeout: 500,     // timeout milliseconds
+                success: function (data,status,xhr) {   // success callback function
+                    $('p').append(data.firstName + ' ' + data.middleName + ' ' + data.lastName);
+                },
+                error: function (jqXhr, textStatus, errorMessage) { // error callback
+                    $('p').append('Error: ' + errorMessage);
+                }
+            });
+    </script>
+{% endblock %}

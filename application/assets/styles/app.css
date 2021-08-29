@@ -1,0 +1,33 @@
+:root {
+    --main-color: #226CE0;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#main-navbar {
+    background-color: var(--main-color);
+}
+
+.website-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.records-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.records-header > #create-record-btn{
+    width: 150px;
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.record-icons a{
+    margin-left: 10px;
+}
