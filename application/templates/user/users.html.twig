@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container mt-5">
+        <h2>All users</h2><br>
+        <div class="row">
+            {% for user in users %}
+                <div class="col-md-4">
+                    <div class="card p-3 mb-3">
+                        <div class="d-flex flex-row mb-3">
+                            <div class="d-flex flex-column ml-2"><span>{{ user.firstName }} {{ user.lastName }}</span></div>
+                        </div>
+                        <div class="d-flex justify-content-between install mt-3">
+                            <span class="ml-2"><b>Records: {{ user.createdPhoneBookRecords|length }}</b></span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
