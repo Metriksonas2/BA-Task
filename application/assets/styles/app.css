@@ -31,3 +31,7 @@ body {
 .record-icons a{
     margin-left: 10px;
 }
+
+.no-records {
+    color: indianred;
+}

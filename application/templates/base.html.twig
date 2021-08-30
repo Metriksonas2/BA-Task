@@ -16,6 +16,10 @@
     <nav id="main-navbar" class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand dmSans" style="font-size: 1.5rem;" href="{{ path('app_index') }}">Phone Book</a>
 
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <span class="logged-in ml-2">User: <b>{{ app.user.firstName }} {{ app.user.lastName|first }}.</b></span>
+        {% endif %}
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link {% if app.request.get('_route') == 'app_users' %} active {% endif %}">
+                        <a href="{{ path('app_users') }}" class="nav-link {% if app.request.get('_route') == 'app_users' %} active {% endif %}">
                             Users
                         </a>
                     </li>

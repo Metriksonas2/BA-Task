@@ -2,25 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.env" beforeDir="false" afterPath="$PROJECT_DIR$/application/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/application/.env.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/application/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordTestController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Form/EditRecordType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Form/PhoneBookRecordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Form/RegistrationFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/phone_book_record_test/show.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/records/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/login/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/login/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/templates/records/records.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/records/records.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/records/shared.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/records/shared.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/registration/register.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_9.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/application/phone_book_record.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/application/phone_book_record.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/application/phone_book_record_user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/application/phone_book_record_user.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/application/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/application/user.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/binlog.000005" beforeDir="false" afterPath="$PROJECT_DIR$/db/binlog.000005" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/db/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/db/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/db/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_002" afterDir="false" />
@@ -36,6 +53,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -194,10 +220,23 @@
       <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records\forms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\tests\Unit" />
+      <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\tests\Feature" />
       <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records" />
       <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\records\forms" />
       <recent name="C:\Users\erika\Desktop\Vilnius Coding School\BA Uzduotis\application\templates\home" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PhoneBookRecordControllerTest.redirectWhenNotAuthorized" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\PhoneBookRecordControllerTest" file="$PROJECT_DIR$/application/tests/Feature/PhoneBookRecordControllerTest.php" method="redirectWhenNotAuthorized" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.PhoneBookRecordControllerTest.redirectWhenNotAuthorized" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,7 +250,8 @@
       <workItem from="1629921629381" duration="2578000" />
       <workItem from="1630009741155" duration="6982000" />
       <workItem from="1630150880882" duration="9627000" />
-      <workItem from="1630262226117" duration="9779000" />
+      <workItem from="1630262226117" duration="10149000" />
+      <workItem from="1630324147471" duration="8556000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1629921852148</created>
@@ -227,15 +267,42 @@
       <option name="project" value="LOCAL" />
       <updated>1630271480964</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added AJAX delete and edit record functionality">
+      <created>1630274988150</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630274988150</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bug fixes, users page and added tests">
+      <created>1630333487705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630333487705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added phone book records CRUD, ability to share records and see shared records" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added phone book records CRUD, ability to share records and see shared records" />
+    <MESSAGE value="Added AJAX delete and edit record functionality" />
+    <MESSAGE value="Bug fixes, users page and added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes, users page and added tests" />
   </component>
 </project>

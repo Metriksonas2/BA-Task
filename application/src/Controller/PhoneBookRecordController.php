@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\PhoneBookRecord;
 use App\Form\CreateRecordType;
-use App\Form\EditRecordType;
 use App\Form\ShareRecordType;
 use App\Manager\PhoneBookRecordManager;
 use App\Repository\PhoneBookRecordRepository;
@@ -17,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PhoneBookRecordController extends AbstractController
 {
     /**
-     * @Route("/records", name="app_records")
+     * @Route("/records", name="app_records", methods={"GET", "POST"})
      */
     public function myRecords(Request $request, PhoneBookRecordRepository $phoneBookRecordRepository)
     {
@@ -46,7 +45,7 @@ class PhoneBookRecordController extends AbstractController
     }
 
     /**
-     * @Route("/shared", name="app_shared")
+     * @Route("/shared", name="app_shared", methods={"GET"})
      */
     public function sharedRecords()
     {
@@ -59,7 +58,7 @@ class PhoneBookRecordController extends AbstractController
     }
 
     /**
-     * @Route("/delete/{id}", name="app_delete")
+     * @Route("/delete/{id}", name="app_delete", methods={"POST"})
      */
     public function deleteRecord(PhoneBookRecord $phoneBookRecord): Response
     {
@@ -71,7 +70,7 @@ class PhoneBookRecordController extends AbstractController
     }
 
     /**
-     * @Route("/edit/record/{id}", name="app_edit")
+     * @Route("/edit/record/{id}", name="app_edit", methods={"POST"})
      */
     public function editAjaxRecord(Request $request, PhoneBookRecord $phoneBookRecord, PhoneBookRecordManager $manager): Response
     {
@@ -85,7 +84,7 @@ class PhoneBookRecordController extends AbstractController
     }
 
     /**
-     * @Route("/record/{id}", name="app_get_record_data")
+     * @Route("/record/{id}", name="app_get_record_data", methods={"GET"})
      */
     public function getRecordData(PhoneBookRecord $phoneBookRecord)
     {
@@ -98,7 +97,7 @@ class PhoneBookRecordController extends AbstractController
     }
 
     /**
-     * @Route("/share/{id}", name="app_share")
+     * @Route("/share/{id}", name="app_share", methods={"GET", "POST"})
      */
     public function shareRecord(Request $request, PhoneBookRecord $phoneBookRecord, PhoneBookRecordManager $manager)
     {

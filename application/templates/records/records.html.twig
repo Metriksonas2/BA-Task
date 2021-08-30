@@ -16,17 +16,18 @@
         </div>
         <br>
 
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Person</th>
-                <th scope="col">Email</th>
-                <th scope="col">Phone number</th>
-                <th scope="col"></th>
-            </tr>
-            </thead>
-            <tbody>
+        {% if phoneBookRecords is not empty %}
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Person</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone number</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
                 {% set index = 1 %}
                 {% for record in phoneBookRecords %}
                     <tr>
@@ -45,8 +46,11 @@
                         {% set index = index + 1 %}
                     </tr>
                 {% endfor %}
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        {% else %}
+            <h4 class="no-records text-center">Currently you have no records. Create one now!</h4>
+        {% endif %}
     </div>
 
     <div class="modal fade" id="createRecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
