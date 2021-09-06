@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Controller/PhoneBookRecordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/DataFixtures/AppFixtures.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Manager/PhoneBookRecordManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/Repository/PhoneBookRecordRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/Repository/PhoneBookRecordRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/records/forms/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/records/forms/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/records/records.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/records/records.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/.env" beforeDir="false" afterPath="$PROJECT_DIR$/application/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/public/htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/application/public/.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +176,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lektorius_laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -230,7 +219,7 @@
       <workItem from="1630262226117" duration="10149000" />
       <workItem from="1630324147471" duration="9589000" />
       <workItem from="1630878698954" duration="156000" />
-      <workItem from="1630931811915" duration="6498000" />
+      <workItem from="1630931811915" duration="8054000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1629921852148</created>
@@ -281,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630931933740</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactored code, added &quot;Service&quot; classes, updated README.md">
+      <created>1630938808384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1630938808384</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +302,7 @@
     <MESSAGE value="Bug fixes, users page and added tests" />
     <MESSAGE value="Added README.md file" />
     <MESSAGE value="Removed &quot;db&quot; folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed &quot;db&quot; folder" />
+    <MESSAGE value="Refactored code, added &quot;Service&quot; classes, updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code, added &quot;Service&quot; classes, updated README.md" />
   </component>
 </project>

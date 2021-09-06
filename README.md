@@ -46,7 +46,7 @@ Automatically set Webpack to watch changes:
 * ```shell
     npm run watch
   ```
-  
+
 Make sure to run all the migrations:
 
 * ```shell
@@ -54,3 +54,5 @@ Make sure to run all the migrations:
   ```
 
 If there are any issues with Docker Apache server, make sure to enable .htaccess file in ``application/public`` by renaming `htaccess` to `.htaccess` (or use `symfony server:start` command to use Symfony's built-in server instead).
+
+Uncomment database configuration line in .env file based on which server you are using (Symfony or Docker Apache).
