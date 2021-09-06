@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e2683f-4485-494f-a3be-432de3dc75fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9536fb40-9477-4304-8293-8353e1e8edad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/db/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/binlog.000006" beforeDir="false" afterPath="$PROJECT_DIR$/db/binlog.000006" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/db/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/db/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/db/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/db/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +193,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BA-Task" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -213,7 +233,8 @@
       <workItem from="1630009741155" duration="6982000" />
       <workItem from="1630150880882" duration="9627000" />
       <workItem from="1630262226117" duration="10149000" />
-      <workItem from="1630324147471" duration="9386000" />
+      <workItem from="1630324147471" duration="9589000" />
+      <workItem from="1630878698954" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1629921852148</created>
@@ -250,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630333786324</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added README.md file">
+      <created>1630334632987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1630334632987</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,12 +294,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added phone book records CRUD, ability to share records and see shared records" />
     <MESSAGE value="Added AJAX delete and edit record functionality" />
     <MESSAGE value="Bug fixes, users page and added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes, users page and added tests" />
+    <MESSAGE value="Added README.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md file" />
   </component>
 </project>
