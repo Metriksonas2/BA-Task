@@ -97,7 +97,10 @@
             e.preventDefault();
             $(this).closest('tr').remove();
 
-            $.ajax(`/delete/${recordId}`);
+            $.ajax({
+                url: `/delete/${recordId}`,
+                type: 'DELETE'
+            });
         });
     </script>
 {% endblock %}

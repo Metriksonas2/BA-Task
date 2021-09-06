@@ -18,8 +18,10 @@ Suggestion for testing **sharing** function: open second browser (or same browse
 
 ## How to prepare application?
 
+To build Docker Containers: 
+
 * ```shell
-    docker-compose start -d
+    docker-compose up -d
   ```
   
 After building Docker containers:
@@ -45,4 +47,10 @@ Automatically set Webpack to watch changes:
     npm run watch
   ```
   
+Make sure to run all the migrations:
+
+* ```shell
+    php bin/console doctrine:migrations:migrate
+  ```
+
 If there are any issues with Docker Apache server, make sure to enable .htaccess file in ``application/public`` by renaming `htaccess` to `.htaccess` (or use `symfony server:start` command to use Symfony's built-in server instead).

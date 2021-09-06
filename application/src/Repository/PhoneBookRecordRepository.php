@@ -19,32 +19,13 @@ class PhoneBookRecordRepository extends ServiceEntityRepository
         parent::__construct($registry, PhoneBookRecord::class);
     }
 
-    // /**
-    //  * @return PhoneBookRecord[] Returns an array of PhoneBookRecord objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function getCreatedPhoneBookRecords(int $userId)
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
+            ->andWhere('p.creator = :userId')
+            ->setParameter('userId', $userId)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?PhoneBookRecord
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }
